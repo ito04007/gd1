@@ -6,38 +6,46 @@ body	{margin: 0;
 
 /* サイト名 */
 
-.site h1 a	{color: #000000;
-	text-decoration: none}
-
-.site h1	{margin: 0;
-	font-size: 30px}
-
-.site img	{border: none}
+.site h1	{
+	margin: 0;}
 
 /*  */
 
-.box3 h1 {
-	padding-left: 10px;
-	margin-top: 10px;
-	border-left: solid 20px #ae0000;
-	font-weight: normal;
-}
-.keireki ul	{margin: 0;
-	padding: 0;
-	list-style: none;
-}
+.keireki li a:hover	{
+	background-color: #eeeeee}
+
+.keireki li	{float: left;
+	width: auto}
 
 .keireki li a	{display: block;
-	padding: 5px;
 	color: #000000;
 	font-size: 14px;
 	text-decoration: none;
+}
+
+.keireki  a i {
+	padding: 10px;
+	color: #797979;
+}
+
+.keireki ul	{margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 .keireki a:after	{content: "";
 	display: block;
 	clear: both;
 }
+
+.top h1 {
+	display: block;
+	padding-left: 10px;
+	margin-top: 50px;
+	border-left: solid 18px #ae0000;
+	font-weight: normal;
+}
+
 
 /* ヘッダー画像 */
 .topimg	{max-width: 100%;
@@ -46,11 +54,13 @@ body	{margin: 0;
 
 /* 事業紹介 */
 
-.zigyou	{padding: 20px;
+.zigyou	{
+	width: 200px;
 	border: solid 5px #dddddd;
 }
 
 .zigyou i	{
+	margin-right: 5px;
 	color: #87b388;
 }
 
@@ -92,11 +102,16 @@ body	{margin: 0;
 	padding: 0;
 	list-style: none}
 
-.box3 p {
+.top p {
 	margin-top:20px;
 	margin-bottom:50px;
 	font-size:20px;
-	color: #797979;
+	color: #919191;
+}
+
+.top {margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 /* BOX2、BOX3を横に並べる設定 */
@@ -140,8 +155,13 @@ body	{margin: 0;
 
 /* コピーライト */
 
+.box4 {
+	display: block;
+	margin-top: 60px;
+}
 .copyright p {
 	margin: 0;
+	margin-left: 15px;
 	color: #666666;
 	font-size: 14px;
 }
@@ -162,7 +182,7 @@ body	{margin: 0;
 	padding-bottom: 10px}
 
 .boxA	{padding-top: 20px;
-	padding-bottom: px}
+	padding-bottom: 0}
 
 /* BOX 1の下に罫線を挿入 */
 .box1	{margin-bottom: 20px;
@@ -198,7 +218,7 @@ body	{margin: 0;
 }
 
 /* ナビゲーションメニュー（縦並び） */
-#menu {
+.menu {
 	display: none;
 }
 .menu ul {
@@ -226,7 +246,7 @@ body	{margin: 0;
 	display: none;
 }
 /* ナビゲーション */
-#menu {
+.menu {
 	display: block !important;
 }
 .menu ul	{margin: 0;
