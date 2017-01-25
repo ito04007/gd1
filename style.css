@@ -1,0 +1,272 @@
+@charset "UTF-8";
+
+
+body	{margin: 0;
+	font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
+
+/* サイト名 */
+
+.site h1 a	{color: #000000;
+	text-decoration: none}
+
+.site h1	{margin: 0;
+	font-size: 30px}
+
+.site img	{border: none}
+
+/*  */
+
+.box3 h1 {
+	padding-left: 10px;
+	margin-top: 10px;
+	border-left: solid 20px #ae0000;
+	font-weight: normal;
+}
+.keireki ul	{margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.keireki li a	{display: block;
+	padding: 5px;
+	color: #000000;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.keireki a:after	{content: "";
+	display: block;
+	clear: both;
+}
+
+/* ヘッダー画像 */
+.topimg	{max-width: 100%;
+	height: auto;
+	vertical-align: bottom}
+
+/* 事業紹介 */
+
+.zigyou	{padding: 20px;
+	border: solid 5px #dddddd;
+}
+
+.zigyou i	{
+	color: #87b388;
+}
+
+.zigyou h1	{margin-top: 0;
+	margin-bottom: 5px;
+	font-size: 18px;
+	color: #666666;
+	font-weight:normal;
+}
+
+.zigyou ul	{margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.zigyou li a	{display: block;
+	padding: 8px;
+	color: #000000;
+	font-size: 14px;
+	text-decoration: none;
+	border-bottom: solid 1px #dddddd
+}
+
+.zigyou h1 {display: block;
+	padding: 8px;
+	color: #000000;
+	text-decoration: none;
+	border-bottom: solid 1px #dddddd
+}
+
+.zigyou li a:hover	{background-color: #eeeeee}
+
+.zigyou a:after	{content: "";
+	display: block;
+	clear: both;
+}
+
+.box3 ul	{margin: 0;
+	padding: 0;
+	list-style: none}
+
+.box3 p {
+	margin-top:20px;
+	margin-bottom:50px;
+	font-size:20px;
+	color: #797979;
+}
+
+/* BOX2、BOX3を横に並べる設定 */
+.boxA:after	{
+	content: "";
+	display: block;
+	clear: both
+}
+.box2	{
+	float: left;
+	margin-right:2%;
+	}
+.box3	{
+	float: left;
+	width: 80%;
+	}
+
+.box3-1 i	{
+	color: #797979;
+}
+
+.box3-1 h2	{margin-bottom: 20px;
+	border-bottom: solid 1px #dddddd;
+    font-weight:normal;}
+
+.box3-2 i	{
+	color: #797979;
+}
+
+.box3-2 h2	{margin-bottom: 20px;
+	border-bottom: solid 1px #dddddd;
+    font-weight:normal;}
+
+.box3-3 i	{
+	color: #797979;
+}
+
+.box3-3 h2	{margin-bottom: 20px;
+	border-bottom: solid 1px #dddddd;
+    font-weight:normal;}
+
+/* コピーライト */
+
+.copyright p {
+	margin: 0;
+	color: #666666;
+	font-size: 14px;
+}
+
+/* バーの形にする */
+.box4 {padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #dddddd}
+
+/* ボックスの左右 */
+.box1, .boxA
+	{padding-left: 15px;
+	padding-right: 15px}
+
+/* ボックスの上下 */
+
+.box1	{padding-top: 20px;
+	padding-bottom: 10px}
+
+.boxA	{padding-top: 20px;
+	padding-bottom: px}
+
+/* BOX 1の下に罫線を挿入 */
+.box1	{margin-bottom: 20px;
+	border-bottom: solid 1px #dddddd}
+
+/* ########### 767px以下 ########### */
+@media (max-width: 767px) {
+
+/* トグルボタン */
+#menubtn {
+	padding:6px 12px;
+	border: solid 1px #aaaaaa;
+	background-color: #ffffff;
+	border-radius: 5px;
+	position: absolute;
+	top:20px;
+	right:15px;
+	cursor: pointer;
+}
+#menubtn:hover {
+	background-color: #dddddd;
+}
+#menubtn:focus {
+	outline:none;
+}
+#menubtn i {
+	color: #888888;
+	font-size: 18px;
+}
+#menubtn span {
+	display: inline-block;
+	text-indent: -9999px;
+}
+
+/* ナビゲーションメニュー（縦並び） */
+#menu {
+	display: none;
+}
+.menu ul {
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+.menu li a {
+	display: block;
+	padding:5px;
+	color:#000000;
+	font-size: 14px;
+	text-decoration: none;
+}
+.menu li a:hover {
+	background-color: #eeeeee;
+}	
+	
+}
+
+/* ########### 768px以上 ########### */
+@media (min-width: 768px) {
+
+#menubtn {
+	display: none;
+}
+/* ナビゲーション */
+#menu {
+	display: block !important;
+}
+.menu ul	{margin: 0;
+	padding: 0;
+	list-style: none}
+
+.menu li a	{display: block;
+	padding: 10px 15px;
+	color: #000000;
+	font-size: 14px;
+	text-decoration: none}
+
+.menu li a:hover	{background-color: #eeeeee}
+
+.menu ul:after	{content: "";
+	display: block;
+	clear: both}
+
+.menu li	{float: left;
+	width: auto}
+
+
+
+/* BOX2とBOX3を横に並べる設定 */
+.box1:after	{content: "";
+	display: block;
+	clear: both}
+
+.site	{float: left;
+	width: auto}
+
+.menu	{float: right;
+	width: auto}
+
+.box4 {content: "";
+	display: block;
+	clear: both}
+
+/* ########### 1190px以上 ########### */
+@media (min-width: 1190px) {
+
+}
+
